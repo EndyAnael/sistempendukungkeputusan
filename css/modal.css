@@ -1,0 +1,180 @@
+/* Gaya untuk modal */
+.modal {
+    display: none;
+    /* Tersembunyi secara default */
+    position: fixed;
+    /* Diletakkan tetap pada layar */
+    z-index: 1;
+    /* Pastikan berada di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Lebar penuh */
+    height: 100%;
+    /* Tinggi penuh */
+    overflow: auto;
+    /* Jika konten terlalu panjang */
+    background-color: rgb(0, 0, 0);
+    /* Warna latar belakang */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Transparansi latar belakang */
+}
+
+.modal-content {
+    box-shadow: 5px 5px 30px #030303;
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% dari atas dan auto dari sisi */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Lebar modal */
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal Untuk hasil inputan SPK IKAN */
+.modal-ikan {
+    display: none;
+    /* Sembunyikan modal secara default */
+    position: fixed;
+    /* Letakkan modal pada posisi tetap */
+    z-index: 1;
+    /* Taruh modal di atas konten */
+    left: 0;
+    /* right: 0; */
+    right: 0;
+    top: 0;
+    /* Lebar modal */
+    height: 100%;
+    /* Tinggi modal */
+    overflow: auto;
+    /* Izinkan gulir jika konten terlalu panjang */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Warna latar belakang dengan transparansi */
+}
+
+/* Gaya konten modal ikan ================================= */
+.modal-content-ikan {
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /* width: 80%; */
+    width: 400px;
+    border-radius: 10px;
+}
+
+.modal-content-ikan ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content-ikan ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.modal-content-ikan h3 {
+    text-align: center;
+}
+
+/* Tombol penutup modal */
+.close-ikan {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -18px;
+    margin-right: -366px;
+}
+
+.close-ikan:hover,
+.close-ikan:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal Untuk hasil inputan SPK UBI UNGU */
+.modal-ubi {
+    display: none;
+    /* Sembunyikan modal secara default */
+    position: fixed;
+    /* Letakkan modal pada posisi tetap */
+    z-index: 1;
+    /* Taruh modal di atas konten */
+    left: 0;
+    /* right: 0; */
+    right: 0;
+    top: 0;
+    /* Lebar modal */
+    height: 100%;
+    /* Tinggi modal */
+    overflow: auto;
+    /* Izinkan gulir jika konten terlalu panjang */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Warna latar belakang dengan transparansi */
+}
+
+
+/* Gaya konten modal ubi ================================= */
+.modal-content-ubi {
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /* width: 80%; */
+    width: 400px;
+    border-radius: 10px;
+}
+
+.modal-content-ubi ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content-ubi ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.modal-content-ubi h3 {
+    text-align: center;
+}
+
+/* Tombol penutup modal */
+.close-ubi {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -18px;
+    margin-right: -366px;
+}
+
+.close-ubi:hover,
+.close-ubi:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

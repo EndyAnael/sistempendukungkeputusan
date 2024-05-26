@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/galery.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <section class="menu">
+        <div class="nav">
+            <div class="logo">
+                <h1>SPK <b>kelompok 3</b></h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#grid">Home</a></li>
+                <li><a href="#spk">SPK</a></li>
+                <li><a href="#team">About Team</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Produk 1 -->
+    <section class="grid" id="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>keripik Ikan <b>Krispi</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat nulla quo fugit, ullam
+                        veniam, eveniet nam fugiat veritatis explicabo dolorem ex porro numquam vitae aperiam odio modi
+                        distinctio. Soluta.</p>
+                    <button id="exploreBtn">Explore</button>
+                </div>
+            </div>
+            <div class="content-right">
+                <img src="img/photo.png" alt="">
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="content-left">
+                <img src="img/selai-ubi.png" alt="">
+            </div>
+            <div class="content-right">
+                <div class="info">
+                    <h2>Selai <b>Ubi</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat nulla quo fugit, ullam
+                        veniam, eveniet nam fugiat veritatis explicabo dolorem ex porro numquam vitae aperiam odio modi
+                        distinctio. Soluta.</p>
+                    <button id="exploreBtn2">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk 2 -->
+    <!-- <section class="grid" id="grid">
+        
+    </section> -->
+
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detail Produk: keripik Ikan Krispi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat nulla quo fugit, ullam veniam,
+                eveniet nam fugiat veritatis explicabo dolorem ex porro numquam vitae aperiam odio modi distinctio.
+                Soluta.</p>
+            <p>Harga: Rp. 15.000</p>
+            <p>Berat: 100 gram</p>
+        </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detail Produk: keripik Ikan Krispi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellat molestiae nisi odio dolor
+                reprehenderit soluta ut cumque alias qui, nostrum officiis facere reiciendis autem quibusdam dolore
+                earum itaque culpa corporis. Mollitia obcaecati sint porro non eaque. Voluptatem, voluptate. Eaque
+                numquam unde officia nobis nihil odit nam libero iste laudantium corrupti aut ipsa perferendis
+                cupiditate, consequatur vitae deserunt obcaecati vel ipsum laborum earum? Qui nihil corporis fugiat
+                obcaecati ipsa iusto dolore laudantium perspiciatis molestiae nam, aliquam exercitationem sint quas rem
+                accusantium earum explicabo. Vel, asperiores! Repudiandae error unde possimus et voluptates, ducimus in
+                ex eius quae delectus esse placeat cumque reprehenderit corporis quos voluptatem iure ab sequi fugiat,
+                nisi nesciunt quo odio! Laborum, illo! Minus quibusdam dignissimos delectus, error deleniti odio dolore
+                in cum? Natus inventore similique, autem provident quo repudiandae assumenda laboriosam cupiditate
+                corrupti, temporibus rem quod. Similique nihil a natus, saepe reiciendis ab nesciunt, non labore, fuga
+                eum provident aut cum aperiam sed? Neque, itaque eos consectetur molestias odio dolor. Praesentium,
+                soluta beatae ducimus quos ipsa rerum doloremque ullam similique voluptatum delectus tempore repellendus
+                et quis nulla amet eius cupiditate sint cumque recusandae natus placeat qui eaque modi! Minima, animi
+                optio magni alias quae nulla beatae distinctio expedita.</p>
+            <p>Harga: Rp. 15.000</p>
+            <p>Berat: 100 gram</p>
+        </div>
+    </div>
+
+
+    <!-- /* Content SPK======================================================= */ -->
+    <div class="container-spk" id="spk">
+        <div class="row-judul">
+            <h2>Sistem Pendukung Keputusan</h2>
+        </div>
+        <div class="row-spk">
+            <div class="col-ikan">
+                <h3>IKAN TONGKOL</h3>
+                <div class="list-ikan">
+                    <form id="ikan">
+                        <div class="list-spk">
+                            <div class="c1">
+                                <label for="c1">Warna Kulit</label>
+                                <select name="c1" id="c1">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Mengkilap</option>
+                                    <option value="7">Mengkilap</option>
+                                    <option value="5">Agak Mengkilap</option>
+                                    <option value="3">Kurang Mengkilap</option>
+                                    <option value="1">Tidak Mengkilap</option>
+                                </select>
+                            </div>
+                            <div class="c1">
+                                <label for="c2">Tekstur Daging</label>
+                                <select name="c2" id="c2">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Kenyal</option>
+                                    <option value="7">Kenyal</option>
+                                    <option value="5">Agak Kenyal</option>
+                                    <option value="3">Kurang Kenyal</option>
+                                    <option value="1">Tidak Kenyal</option>
+                                </select>
+                            </div>
+                            <div class="c1">
+                                <label for="c3">Bau</label>
+                                <select name="c3" id="c3">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Khas Laut</option>
+                                    <option value="7">Khas Laut</option>
+                                    <option value="5">Agak Khas Laut</option>
+                                    <option value="3">Kurang Khas Laut</option>
+                                    <option value="1">Amis</option>
+                                </select>
+                            </div>
+                            <div class="c1">
+                                <label for="c4">Kondisi Mata</label>
+                                <select name="c4" id="c4">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Jernih</option>
+                                    <option value="7">Jernih</option>
+                                    <option value="5">Agak Jernih</option>
+                                    <option value="3">Kurang Jernih</option>
+                                    <option value="1">Tenggelam</option>
+                                </select>
+                            </div>
+                            <div class="c1">
+                                <label for="c5">Warna Insang</label>
+                                <select name="c5" id="c5">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Merah Cerah</option>
+                                    <option value="7">Merah</option>
+                                    <option value="5">Agak Merah</option>
+                                    <option value="3">Kurang Merah</option>
+                                    <option value="1">Pucat</option>
+                                </select>
+                            </div>
+                            <div class="c1">
+                                <label for="c6">Kondisi Fisik</label>
+                                <select name="c6" id="c6">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Utuh</option>
+                                    <option value="7">Utuh</option>
+                                    <option value="5">Agak Utuh</option>
+                                    <option value="3">Kurang Utuh</option>
+                                    <option value="1">Cacat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="pilih-ikan">Pilih</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Modal  Ikan -->
+            <div id="modal-ikan" class="modal-ikan">
+                <!-- Konten modal -->
+                <div class="modal-content-ikan">
+                    <span class="close-ikan">&times;</span>
+                    <div id="modal-body">
+                        <h3>Hasil Pemilihan:</h3>
+                        <ul id="answers-list-ikan"></ul>
+                        <h3 id="quality-ikan"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-ubi">
+                <h3>UBI UNGU</h3>
+                <div class="list-ubi">
+                    <form id="ubi">
+                        <div class="list-spk">
+                            <div class="d1">
+                                <label for="d1">Warna Kulit</label>
+                                <select name="d1" id="d1">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Ungu</option>
+                                    <option value="7">Ungu</option>
+                                    <option value="5">Agak Ungu</option>
+                                    <option value="3">Kurang Ungu</option>
+                                    <option value="1">Tidak Ungu</option>
+                                </select>
+                            </div>
+                            <div class="d1">
+                                <label for="d2">Tekstur Daging</label>
+                                <select name="d2" id="d2">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Kenyal</option>
+                                    <option value="7">Kenyal</option>
+                                    <option value="5">Agak Kenyal</option>
+                                    <option value="3">Kurang Kenyal</option>
+                                    <option value="1">Tidak Kenyal</option>
+                                </select>
+                            </div>
+                            <div class="d1">
+                                <label for="d3">Kandungan Gula</label>
+                                <select name="d3" id="d3">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Manis</option>
+                                    <option value="7">Manis</option>
+                                    <option value="5">Agak Manis</option>
+                                    <option value="3">Kurang Manis</option>
+                                    <option value="1">Tidak Manis</option>
+                                </select>
+                            </div>
+                            <div class="d1">
+                                <label for="d4">Kondisi Kulit</label>
+                                <select name="d4" id="d4">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Mulus</option>
+                                    <option value="7">Sedikit Cacat</option>
+                                    <option value="5">Beberapa Cacat</option>
+                                    <option value="3">Banyak Cacat</option>
+                                    <option value="1">Sangat Cacat</option>
+                                </select>
+                            </div>
+                            <div class="d1">
+                                <label for="d5">Ukuran</label>
+                                <select name="d5" id="d5">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Seragam Besar</option>
+                                    <option value="7">Seragam Sedang</option>
+                                    <option value="5">Sedikit Variasi</option>
+                                    <option value="3">Banyak Variasi</option>
+                                    <option value="1">Tidak Seragam</option>
+                                </select>
+                            </div>
+                            <div class="d1">
+                                <label for="d6">Kesegaran</label>
+                                <select name="d6" id="d6">
+                                    <option selected>Masukan Pilihan anda</option>
+                                    <option value="9">Sangat Segar</option>
+                                    <option value="7">Segar</option>
+                                    <option value="5">Cukup Segar</option>
+                                    <option value="3">Kurang Segar</option>
+                                    <option value="1">Tidak Segar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="pilih-ubi">Pilih</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Modal  ubi -->
+            <div id="modal-ubi" class="modal-ubi">
+                <!-- Konten modal -->
+                <div class="modal-content-ubi">
+                    <span class="close-ubi">&times;</span>
+                    <div id="modal-body">
+                        <h3>Hasil Pemilihan:</h3>
+                        <ul id="answers-list-ubi"></ul>
+                        <h3 id="quality-ubi"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content About Team -->
+    <div class="container-galeri" id="team">
+        <h1>About Team</h1>
+        <div class="content-galeri">
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/p1.png" alt="">
+                <div class="layer">
+                    <h3>Abner Ganteng</h3>
+                    <h5>2121038</h5>
+                    <h5>Teknik Informatika</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Content About Team -->
+
+
+
+    <!-- <div class="footer">
+        <div class="list-item">
+            <a href="#">
+                <i class='bx bxl-facebook-circle'></i>
+                <p>Facebook</p>
+            </a>
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+                <p>Instagram</p>
+            </a>
+            <a href="#">
+                <i class='bx bx-envelope'></i>
+                <p>Email</p>
+            </a>
+        </div>
+    </div> -->
+
+
+
+    <script src="main.js"></script>
+    <script src="galeri.js"></script>
+</body>
+
+</html>
